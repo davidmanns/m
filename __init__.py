@@ -16,6 +16,6 @@ def history():
 def directory():
     redirect(URL("oxcam", "directory", scheme=True).replace('/m/', '/'))
 
-@action("mail_list")
+@action("mail_lists")
 def mail_list():
     redirect(URL("oxcam", "registration", vars=dict(mail_lists='Y'), scheme=True).replace('/m/', '/'))
