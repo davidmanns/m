@@ -16,6 +16,6 @@ def index():
 def index():
     redirect(URL("oxcam", "directory", scheme=True).replace('/m/', '/'))
 
-@action("mail_lists")
+@action("mail_list")
 def index():
-    redirect(URL("oxcam", "registration", vars=dict(mail_list='Y'), scheme=True).replace('/m/', '/'))
+    redirect(URL("oxcam", "registration", vars=dict(mail_lists='Y'), scheme=True).replace('/m/', '/'))
