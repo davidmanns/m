@@ -5,17 +5,17 @@ def index():
     redirect(URL("oxcam", scheme=True).replace('/m/', '/'))
 
 @action("about")
-def index():
+def about():
     redirect(URL("oxcam", "about", scheme=True).replace('/m/', '/'))
 
 @action("history")
-def index():
+def history():
     redirect(URL("oxcam", "history", scheme=True).replace('/m/', '/'))
 
 @action("directory")
-def index():
+def directory():
     redirect(URL("oxcam", "directory", scheme=True).replace('/m/', '/'))
 
 @action("mail_list")
-def index():
+def mail_list():
     redirect(URL("oxcam", "registration", vars=dict(mail_lists='Y'), scheme=True).replace('/m/', '/'))
